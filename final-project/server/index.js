@@ -76,7 +76,10 @@ app.use("/events", eventsRouter);
 app.use("/Browser", BrowserController);
 
 // Start the server
-const PORT = 3002;
-app.listen(PORT, () => {
-  console.log(`Server running on ${PORT}`);
+// const PORT = 3002;
+// app.listen(PORT, () => {
+//   console.log(`Server running on ${PORT}`);
+// });
+app.listen(port, () => {
+  console.log(`Server running on ${port}`);
 });
