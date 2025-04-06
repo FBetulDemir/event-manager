@@ -11,7 +11,7 @@ import userRoutes from "./userRoutes.js";
 import eventsRouter from "./events.js";
 import landingPageRoutes from "./landingPageRoutes.js";
 import swaggerUi from "swagger-ui-express";
-import swaggerDocument from "./swagger.json" assert { type: "json" };
+// import swaggerDocument from "./swagger.json" assert { type: "json" };
 import BrowserController from "./BrowserController.js"
 
 // Obtener el directorio actual usando import.meta.url
@@ -27,7 +27,7 @@ console.log(process.env.JWT_SECRET);
 const app = express();
 const port = process.env.PORT || 3002;
 
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+// app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 db.connectDB();
 
